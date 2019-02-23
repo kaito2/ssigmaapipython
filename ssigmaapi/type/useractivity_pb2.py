@@ -19,10 +19,32 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='ssigmaapi.type',
   syntax='proto3',
   serialized_options=_b('Z<github.com/kaito2/ssigmaapigo/type/useractivity;useractivity'),
-  serialized_pb=_b('\n!ssigmaapi/type/useractivity.proto\x12\x0essigmaapi.type\"\xad\x01\n\x0cUserActivity\x12\x17\n\x0fstart_timestamp\x18\x01 \x01(\x03\x12\x15\n\rend_timestamp\x18\x02 \x01(\x03\x12\x35\n\x0ekeyboard_input\x18\x03 \x01(\x0b\x32\x1d.ssigmaapi.type.KeyboardInput\x12\x36\n\x0bwindow_list\x18\x04 \x03(\x0b\x32!.ssigmaapi.type.ApplicationWindow\"%\n\rKeyboardInput\x12\x14\n\x0cstroke_count\x18\x01 \x01(\x03\"\x1d\n\x05Point\x12\t\n\x01x\x18\x01 \x01(\x03\x12\t\n\x01y\x18\x02 \x01(\x03\"\xcd\x02\n\x11\x41pplicationWindow\x12&\n\x07lefttop\x18\x01 \x01(\x0b\x32\x15.ssigmaapi.type.Point\x12\x0e\n\x06height\x18\x02 \x01(\x03\x12\r\n\x05width\x18\x03 \x01(\x03\x12\r\n\x05title\x18\x04 \x01(\t\x12\x14\n\x0cprogram_name\x18\x05 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x06 \x01(\t\x12\x0f\n\x07\x63ompany\x18\x07 \x01(\t\x12\x15\n\ris_foreground\x18\x08 \x01(\x08\x12\x43\n\x0cwindow_state\x18\t \x01(\x0e\x32-.ssigmaapi.type.ApplicationWindow.WindowState\x12\x11\n\ttimestamp\x18\n \x01(\x03\"7\n\x0bWindowState\x12\n\n\x06NORMAL\x10\x00\x12\r\n\tMAXIMIZED\x10\x01\x12\r\n\tMINIMIZED\x10\x02\x42>Z<github.com/kaito2/ssigmaapigo/type/useractivity;useractivityb\x06proto3')
+  serialized_pb=_b('\n!ssigmaapi/type/useractivity.proto\x12\x0essigmaapi.type\"\x8d\x02\n\x0cUserActivity\x12\x17\n\x0fstart_timestamp\x18\x01 \x01(\x03\x12\x15\n\rend_timestamp\x18\x02 \x01(\x03\x12\x35\n\x0ekeyboard_input\x18\x03 \x01(\x0b\x32\x1d.ssigmaapi.type.KeyboardInput\x12\x36\n\x0bwindow_list\x18\x04 \x03(\x0b\x32!.ssigmaapi.type.ApplicationWindow\x12:\n\nuser_state\x18\x05 \x01(\x0e\x32&.ssigmaapi.type.UserActivity.UserState\"\"\n\tUserState\x12\x0b\n\x07WORKING\x10\x00\x12\x08\n\x04\x41WAY\x10\x01\"%\n\rKeyboardInput\x12\x14\n\x0cstroke_count\x18\x01 \x01(\x03\"\x1d\n\x05Point\x12\t\n\x01x\x18\x01 \x01(\x03\x12\t\n\x01y\x18\x02 \x01(\x03\"\xcd\x02\n\x11\x41pplicationWindow\x12&\n\x07lefttop\x18\x01 \x01(\x0b\x32\x15.ssigmaapi.type.Point\x12\x0e\n\x06height\x18\x02 \x01(\x03\x12\r\n\x05width\x18\x03 \x01(\x03\x12\r\n\x05title\x18\x04 \x01(\t\x12\x14\n\x0cprogram_name\x18\x05 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x06 \x01(\t\x12\x0f\n\x07\x63ompany\x18\x07 \x01(\t\x12\x15\n\ris_foreground\x18\x08 \x01(\x08\x12\x43\n\x0cwindow_state\x18\t \x01(\x0e\x32-.ssigmaapi.type.ApplicationWindow.WindowState\x12\x11\n\ttimestamp\x18\n \x01(\x03\"7\n\x0bWindowState\x12\n\n\x06NORMAL\x10\x00\x12\r\n\tMAXIMIZED\x10\x01\x12\r\n\tMINIMIZED\x10\x02\x42>Z<github.com/kaito2/ssigmaapigo/type/useractivity;useractivityb\x06proto3')
 )
 
 
+
+_USERACTIVITY_USERSTATE = _descriptor.EnumDescriptor(
+  name='UserState',
+  full_name='ssigmaapi.type.UserActivity.UserState',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='WORKING', index=0, number=0,
+      serialized_options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='AWAY', index=1, number=1,
+      serialized_options=None,
+      type=None),
+  ],
+  containing_type=None,
+  serialized_options=None,
+  serialized_start=289,
+  serialized_end=323,
+)
+_sym_db.RegisterEnumDescriptor(_USERACTIVITY_USERSTATE)
 
 _APPLICATIONWINDOW_WINDOWSTATE = _descriptor.EnumDescriptor(
   name='WindowState',
@@ -45,8 +67,8 @@ _APPLICATIONWINDOW_WINDOWSTATE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=578,
-  serialized_end=633,
+  serialized_start=674,
+  serialized_end=729,
 )
 _sym_db.RegisterEnumDescriptor(_APPLICATIONWINDOW_WINDOWSTATE)
 
@@ -86,11 +108,19 @@ _USERACTIVITY = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='user_state', full_name='ssigmaapi.type.UserActivity.user_state', index=4,
+      number=5, type=14, cpp_type=8, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
+    _USERACTIVITY_USERSTATE,
   ],
   serialized_options=None,
   is_extendable=False,
@@ -99,7 +129,7 @@ _USERACTIVITY = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=54,
-  serialized_end=227,
+  serialized_end=323,
 )
 
 
@@ -129,8 +159,8 @@ _KEYBOARDINPUT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=229,
-  serialized_end=266,
+  serialized_start=325,
+  serialized_end=362,
 )
 
 
@@ -167,8 +197,8 @@ _POINT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=268,
-  serialized_end=297,
+  serialized_start=364,
+  serialized_end=393,
 )
 
 
@@ -262,12 +292,14 @@ _APPLICATIONWINDOW = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=300,
-  serialized_end=633,
+  serialized_start=396,
+  serialized_end=729,
 )
 
 _USERACTIVITY.fields_by_name['keyboard_input'].message_type = _KEYBOARDINPUT
 _USERACTIVITY.fields_by_name['window_list'].message_type = _APPLICATIONWINDOW
+_USERACTIVITY.fields_by_name['user_state'].enum_type = _USERACTIVITY_USERSTATE
+_USERACTIVITY_USERSTATE.containing_type = _USERACTIVITY
 _APPLICATIONWINDOW.fields_by_name['lefttop'].message_type = _POINT
 _APPLICATIONWINDOW.fields_by_name['window_state'].enum_type = _APPLICATIONWINDOW_WINDOWSTATE
 _APPLICATIONWINDOW_WINDOWSTATE.containing_type = _APPLICATIONWINDOW
