@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='ssigmaapi.type',
   syntax='proto3',
   serialized_options=_b('Z<github.com/kaito2/ssigmaapigo/type/useractivity;useractivity'),
-  serialized_pb=_b('\n!ssigmaapi/type/useractivity.proto\x12\x0essigmaapi.type\"\xbe\x02\n\x0cUserActivity\x12\x17\n\x0fstart_timestamp\x18\x01 \x01(\x03\x12\x15\n\rend_timestamp\x18\x02 \x01(\x03\x12\x35\n\x0ekeyboard_input\x18\x03 \x01(\x0b\x32\x1d.ssigmaapi.type.KeyboardInput\x12\x36\n\x0bwindow_list\x18\x04 \x03(\x0b\x32!.ssigmaapi.type.ApplicationWindow\x12:\n\nuser_state\x18\x05 \x01(\x0e\x32&.ssigmaapi.type.UserActivity.UserState\x12/\n\x0bmouse_input\x18\x06 \x01(\x0b\x32\x1a.ssigmaapi.type.MouseInput\"\"\n\tUserState\x12\x0b\n\x07WORKING\x10\x00\x12\x08\n\x04\x41WAY\x10\x01\"%\n\rKeyboardInput\x12\x14\n\x0cstroke_count\x18\x01 \x01(\x03\"]\n\nMouseInput\x12\x18\n\x10left_click_count\x18\x01 \x01(\x03\x12\x1a\n\x12middle_click_count\x18\x02 \x01(\x03\x12\x19\n\x11right_click_count\x18\x03 \x01(\x03\"\x1d\n\x05Point\x12\t\n\x01x\x18\x01 \x01(\x03\x12\t\n\x01y\x18\x02 \x01(\x03\"\xcd\x02\n\x11\x41pplicationWindow\x12&\n\x07lefttop\x18\x01 \x01(\x0b\x32\x15.ssigmaapi.type.Point\x12\x0e\n\x06height\x18\x02 \x01(\x03\x12\r\n\x05width\x18\x03 \x01(\x03\x12\r\n\x05title\x18\x04 \x01(\t\x12\x14\n\x0cprogram_name\x18\x05 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x06 \x01(\t\x12\x0f\n\x07\x63ompany\x18\x07 \x01(\t\x12\x15\n\ris_foreground\x18\x08 \x01(\x08\x12\x43\n\x0cwindow_state\x18\t \x01(\x0e\x32-.ssigmaapi.type.ApplicationWindow.WindowState\x12\x11\n\ttimestamp\x18\n \x01(\x03\"7\n\x0bWindowState\x12\n\n\x06NORMAL\x10\x00\x12\r\n\tMAXIMIZED\x10\x01\x12\r\n\tMINIMIZED\x10\x02\x42>Z<github.com/kaito2/ssigmaapigo/type/useractivity;useractivityb\x06proto3')
+  serialized_pb=_b('\n!ssigmaapi/type/useractivity.proto\x12\x0essigmaapi.type\"\xe0\x02\n\x0cUserActivity\x12\x17\n\x0fstart_timestamp\x18\x01 \x01(\x03\x12\x15\n\rend_timestamp\x18\x02 \x01(\x03\x12\x35\n\x0ekeyboard_input\x18\x03 \x01(\x0b\x32\x1d.ssigmaapi.type.KeyboardInput\x12\x36\n\x0bwindow_list\x18\x04 \x03(\x0b\x32!.ssigmaapi.type.ApplicationWindow\x12:\n\nuser_state\x18\x05 \x01(\x0e\x32&.ssigmaapi.type.UserActivity.UserState\x12/\n\x0bmouse_input\x18\x06 \x01(\x0b\x32\x1a.ssigmaapi.type.MouseInput\x12 \n\x18switch_application_count\x18\x07 \x01(\x03\"\"\n\tUserState\x12\x0b\n\x07WORKING\x10\x00\x12\x08\n\x04\x41WAY\x10\x01\"%\n\rKeyboardInput\x12\x14\n\x0cstroke_count\x18\x01 \x01(\x03\"r\n\nMouseInput\x12\x13\n\x0b\x63lick_count\x18\x01 \x01(\x03\x12\x18\n\x10left_click_count\x18\x02 \x01(\x03\x12\x1a\n\x12middle_click_count\x18\x03 \x01(\x03\x12\x19\n\x11right_click_count\x18\x04 \x01(\x03\"\x1d\n\x05Point\x12\t\n\x01x\x18\x01 \x01(\x03\x12\t\n\x01y\x18\x02 \x01(\x03\"\xcd\x02\n\x11\x41pplicationWindow\x12&\n\x07lefttop\x18\x01 \x01(\x0b\x32\x15.ssigmaapi.type.Point\x12\x0e\n\x06height\x18\x02 \x01(\x03\x12\r\n\x05width\x18\x03 \x01(\x03\x12\r\n\x05title\x18\x04 \x01(\t\x12\x14\n\x0cprogram_name\x18\x05 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x06 \x01(\t\x12\x0f\n\x07\x63ompany\x18\x07 \x01(\t\x12\x15\n\ris_foreground\x18\x08 \x01(\x08\x12\x43\n\x0cwindow_state\x18\t \x01(\x0e\x32-.ssigmaapi.type.ApplicationWindow.WindowState\x12\x11\n\ttimestamp\x18\n \x01(\x03\"7\n\x0bWindowState\x12\n\n\x06NORMAL\x10\x00\x12\r\n\tMAXIMIZED\x10\x01\x12\r\n\tMINIMIZED\x10\x02\x42>Z<github.com/kaito2/ssigmaapigo/type/useractivity;useractivityb\x06proto3')
 )
 
 
@@ -41,8 +41,8 @@ _USERACTIVITY_USERSTATE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=338,
-  serialized_end=372,
+  serialized_start=372,
+  serialized_end=406,
 )
 _sym_db.RegisterEnumDescriptor(_USERACTIVITY_USERSTATE)
 
@@ -67,8 +67,8 @@ _APPLICATIONWINDOW_WINDOWSTATE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=818,
-  serialized_end=873,
+  serialized_start=873,
+  serialized_end=928,
 )
 _sym_db.RegisterEnumDescriptor(_APPLICATIONWINDOW_WINDOWSTATE)
 
@@ -122,6 +122,13 @@ _USERACTIVITY = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='switch_application_count', full_name='ssigmaapi.type.UserActivity.switch_application_count', index=6,
+      number=7, type=3, cpp_type=2, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -136,7 +143,7 @@ _USERACTIVITY = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=54,
-  serialized_end=372,
+  serialized_end=406,
 )
 
 
@@ -166,8 +173,8 @@ _KEYBOARDINPUT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=374,
-  serialized_end=411,
+  serialized_start=408,
+  serialized_end=445,
 )
 
 
@@ -179,22 +186,29 @@ _MOUSEINPUT = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='left_click_count', full_name='ssigmaapi.type.MouseInput.left_click_count', index=0,
+      name='click_count', full_name='ssigmaapi.type.MouseInput.click_count', index=0,
       number=1, type=3, cpp_type=2, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='middle_click_count', full_name='ssigmaapi.type.MouseInput.middle_click_count', index=1,
+      name='left_click_count', full_name='ssigmaapi.type.MouseInput.left_click_count', index=1,
       number=2, type=3, cpp_type=2, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='right_click_count', full_name='ssigmaapi.type.MouseInput.right_click_count', index=2,
+      name='middle_click_count', full_name='ssigmaapi.type.MouseInput.middle_click_count', index=2,
       number=3, type=3, cpp_type=2, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='right_click_count', full_name='ssigmaapi.type.MouseInput.right_click_count', index=3,
+      number=4, type=3, cpp_type=2, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -211,8 +225,8 @@ _MOUSEINPUT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=413,
-  serialized_end=506,
+  serialized_start=447,
+  serialized_end=561,
 )
 
 
@@ -249,8 +263,8 @@ _POINT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=508,
-  serialized_end=537,
+  serialized_start=563,
+  serialized_end=592,
 )
 
 
@@ -344,8 +358,8 @@ _APPLICATIONWINDOW = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=540,
-  serialized_end=873,
+  serialized_start=595,
+  serialized_end=928,
 )
 
 _USERACTIVITY.fields_by_name['keyboard_input'].message_type = _KEYBOARDINPUT
